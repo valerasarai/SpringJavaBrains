@@ -7,48 +7,74 @@ public class Example01Main {
 
         method01();  // direct
         method02();  // polimorfism
-
+        method03();  // inversie de control 1
+        method04();  // inversie de control 2
 
     }
 
-    public static void method01(){
+    private static void method01(){
         /*
-            Apelarea functiei dor() direct prin declararea de obiecte de clase mostenitoare
+            Apelarea functiei draw() direct prin declararea de obiecte de clase mostenitoare
         */
 
         System.out.println("Exemplu 1: Apelare directa");
         Triangle triangle = new Triangle();
-        triangle.drow();
+        triangle.draw();
 
         Circle circle = new Circle();
-        circle.drow();
+        circle.draw();
 
     }
 
-    public static void method02(){
+    private static void method02(){
         /*
-            Apelarea functiei dor() prin obiectu de clasa parinte Polimorfism
+            Apelarea functiei draw() prin obiectu de clasa parinte Polimorfism
         */
 
         System.out.println("Exemplu 2: Polimorfism");
         Shape triangle = new Triangle();
-        triangle.drow();
+        triangle.draw();
 
         Shape circle = new Circle();
-        circle.drow();
+        circle.draw();
 
     }
 
-    public static void method03(){
+    private static void method03(){
         /*
-            Apelarea functiei dor() prin functia myDrow - inverstie de control
+            Apelarea functiei draw() prin functia myDrowMethod - inverstie de control
         */
 
-        System.out.println("Exemplu 3: Inversie de control");
-        Shape triangle = new Triangle();
+        System.out.println("Exemplu 3: Inversie de control 1");
+        Shape shape = new Triangle();
+        myDrawMethod(shape);
 
-        Shape circle = new Circle();
-        circle.drow();
+        shape = new Circle();
+        myDrawMethod(shape);
+
+    }
+
+    private static void method04(){
+        /*
+            Apelarea functiei draw() prin functia drawShape din clasa Drawind - inverstie de control
+        */
+
+        System.out.println("Exemplu 4: Inversie de control 2");
+        Drawing drawing = new Drawing();
+
+        Shape shape = new Triangle();
+        drawing.setShape(shape);
+        drawing.drawShape();
+
+        shape = new Circle();
+        drawing.setShape(shape);
+        drawing.drawShape();
+
+    }
+
+    public static void myDrawMethod(Shape shape){
+
+        shape.draw();
 
     }
 

@@ -1,14 +1,15 @@
 package com.valerastudy;
 
-public class Drowing {
-    public Shape shape;
+public class Drawing {
+
+    private Shape shape;
 
     public void setShape(Shape shape) {
         this.shape = shape;
     }
 
-    public void myDrow()
+    public void drawShape()
     {
-        this.shape.drow();
+        this.shape.draw();
     }
 }

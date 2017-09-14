@@ -2,6 +2,6 @@ package com.valerastudy;
 
 public class Shape {
 
-    public void drow(){}
+    public void draw(){}
 
 }
