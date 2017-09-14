@@ -62,6 +62,10 @@ public class Example01Main {
         System.out.println("Exemplu 4: Inversie de control 2");
         Drawing drawing = new Drawing();
 
+        // aici se poate de facut shi mai interesant
+        // de facut o noua metoda care va primi shape si va crea singura drawing si il va si desena
+        // in locul celor 2 rinduri care se repeta
+        
         Shape shape = new Triangle();
         drawing.setShape(shape);
         drawing.drawShape();
