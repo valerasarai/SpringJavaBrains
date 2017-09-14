@@ -10,12 +10,5 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>SpringJavaBrainsEx02</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>3.0.5.RELEASE</version>
-        </dependency>
-    </dependencies>
 
 </project>
