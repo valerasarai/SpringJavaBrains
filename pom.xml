@@ -16,6 +16,10 @@
         <module>Example05</module>
         <module>Example06</module>
         <module>Example07</module>
+        <module>Example08</module>
+        <module>Example09</module>
+        <module>Example10</module>
+        <module>Example11</module>
     </modules>
     <dependencies>
         <dependency>

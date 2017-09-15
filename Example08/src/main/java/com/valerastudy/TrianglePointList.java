@@ -2,7 +2,7 @@ package com.valerastudy;
 
 import java.util.List;
 
-public class Triangle {
+public class TrianglePointList {
     private List<Point> points;
 
     public List<Point> getPoints() {
