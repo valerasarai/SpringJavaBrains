@@ -30,10 +30,10 @@ public class Triangle {
     }
 
     public void draw() {
-        System.out.println("Triangle{" +
-                "pointA=" + pointA.toString() +
-                ", pointB=" + pointB.toString() +
-                ", pointC=" + pointC.toString() +
-                '}');
+        System.out.println("Triangle["+
+                           "pointA=" + pointA.toString() +
+                           ", pointB=" + pointB.toString() +
+                           ", pointC=" + pointC.toString() +
+                           ']');
     }
 }
